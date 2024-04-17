@@ -5,8 +5,12 @@ body {
     height: 100%;
     margin: 0;
     scroll-behavior: smooth;
-    height: 4000px;
+    height: 600vh;
     
+}
+body::-webkit-scrollbar {
+    width: 0;  
+    height: 0; 
 }
 .fade-in {
     opacity: 0;
@@ -449,3 +453,4 @@ h4{
 			}
 		}
 }
+

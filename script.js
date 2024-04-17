@@ -12,7 +12,7 @@ document.addEventListener("DOMContentLoaded", function() {
 });
 
 document.addEventListener("DOMContentLoaded", function () {
-    // Add fade-in class to elements you want to have the effect
+
     var fadeElements = document.querySelectorAll('.fade-in');
 
     function handleIntersection(entries, observer) {
@@ -24,10 +24,10 @@ document.addEventListener("DOMContentLoaded", function () {
         });
     }
 
-    // Set up Intersection Observer
+    
     var observer = new IntersectionObserver(handleIntersection, { threshold: 0.5 });
 
-    // Observe each element with the fade-in class
+    
     fadeElements.forEach(function (element) {
         observer.observe(element);
     });
